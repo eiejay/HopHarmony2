@@ -2,7 +2,7 @@ name: random-workflow
 on:
   push
 env: 
-  MARKET "COSTCO"
+  MARKET: "COSTCO"
   NUMBER: 7
 jobs:
   hello-jobs:
