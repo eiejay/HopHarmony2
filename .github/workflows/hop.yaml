@@ -5,12 +5,12 @@ env:
   MARKET: "COSTCO"
   NUMBER: 7
 jobs:
-  hello-jobs:
+  hello-job:
       runs-on: ubuntu-latest
       steps:
        - name: Print Hello
          run: echo "Hello"
-      - name: Printing Variables
-        run: |
+       - name: Printing Variables
+         run: |
           echo "$MARKET"
           echo "$NUMBER"
