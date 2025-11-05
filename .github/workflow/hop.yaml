@@ -1,9 +1,16 @@
 name: random-workflow
 on:
-  workflow_dispatch
+  push
+env: 
+  MARKET "COSTCO"
+  NUMBER: 7
 jobs:
   hello-jobs:
       runs-on: ubuntu-latest
       steps:
        - name: Print Hello
          run: echo "Hello"
+      - name: Printing Variables
+        run: |
+          echo "$MARKET"
+          echo "$NUMBER"
