@@ -3,7 +3,7 @@ on:
   push
 env: 
   MARKET "COSTCO"
-  NUMBER: "7"
+  NUMBER: 7
 jobs:
   hello-jobs:
       runs-on: ubuntu-latest
