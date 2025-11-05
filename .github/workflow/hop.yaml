@@ -1,1 +1,9 @@
-
+name: random-workflow
+on:
+  workflow_dispatch
+jobs:
+  hello-jobs:
+      runs-on: ubuntu-latest
+      steps:
+       - name: Print Hello
+         run: echo "Hello"
